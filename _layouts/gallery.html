@@ -11,5 +11,35 @@ gallery_js: lightbox
   <div class="post-content">
     {{ content }}
   </div>
+  {% comment %}
+  Use the data_file variable from the page front matter to access the correct data file.
+{% endcomment %}
+
+  <div class="gallery">
+    {% assign data_file = page.data_file %}
+    {% assign items = site.data[data_file] %}
+    {% assign number_slides = items.size | minus: 1 %}
+    {% assign slides = (0..number_slides) %}
+    {% for slide in slides %} 
+    <img src="{{ site.baseurl }}{{ items[slide].file }}" onclick="openModal();currentSlide({{ slide }})" class="gallery-item"  alt="{{ items[slide].name }}">
+    {% endfor %}
+  </div>
+  
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">  
+      {% for slide in slides %}
+      <div class="mySlides">
+        <div class="numbertext">{{ slide | plus: 1 }} / {{items.size}}</div>
+        <img class="slide" src="{{ site.baseurl }}{{ items[slide].file }}" alt="{{ items[slide].name }}">
+      </div>
+      {% endfor %}  
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
 
 </article>

@@ -1,0 +1,20 @@
+- name: Pastel 1
+  file: /assets/pastels/pastel1.jpg
+
+- name: Pastel 2
+  file: /assets/pastels/pastel2.jpg
+
+- name: Pastel 3
+  file: /assets/pastels/pastel3.jpg
+
+- name: Pastel 4
+  file: /assets/pastels/pastel4.jpg
+
+- name: Pastel 5
+  file: /assets/pastels/pastel5.jpg
+
+- name: Pastel 6
+  file: /assets/pastels/pastel6.jpg
+
+- name: Pastel 7
+  file: /assets/pastels/pastel7.jpg

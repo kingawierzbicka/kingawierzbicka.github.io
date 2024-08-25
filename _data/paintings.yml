@@ -1,0 +1,71 @@
+- name: Painting 1
+  file: /assets/paintings/painting1.jpg
+
+- name: Painting 2
+  file: /assets/paintings/painting2.jpg
+
+- name: Painting 3
+  file: /assets/paintings/painting3.jpg
+
+- name: Painting 4
+  file: /assets/paintings/painting4.jpg
+
+- name: Painting 5
+  file: /assets/paintings/painting5.jpg
+
+- name: Painting 6
+  file: /assets/paintings/painting6.jpg
+
+- name: Painting 7
+  file: /assets/paintings/painting7.jpg
+
+- name: Painting 8
+  file: /assets/paintings/painting8.jpg
+
+- name: Painting 9
+  file: /assets/paintings/painting9.jpg
+
+- name: Painting 10
+  file: /assets/paintings/painting10.jpg
+
+- name: Painting 11
+  file: /assets/paintings/painting11.jpg
+
+- name: Painting 12
+  file: /assets/paintings/painting12.jpg
+
+- name: Painting 13
+  file: /assets/paintings/painting13.jpg
+
+- name: Painting 14
+  file: /assets/paintings/painting14.jpg
+
+- name: Painting 15
+  file: /assets/paintings/painting15.jpg
+
+- name: Painting 16
+  file: /assets/paintings/painting16.jpg
+
+- name: Painting 17
+  file: /assets/paintings/painting17.jpg
+
+- name: Painting 18
+  file: /assets/paintings/painting18.jpg
+
+- name: Painting 19
+  file: /assets/paintings/painting19.jpg
+
+- name: Painting 20
+  file: /assets/paintings/painting20.jpg
+
+- name: Painting 21
+  file: /assets/paintings/painting21.jpg
+
+- name: Painting 22
+  file: /assets/paintings/painting22.jpg
+
+- name: Painting 23
+  file: /assets/paintings/painting23.jpg
+
+- name: Painting 24
+  file: /assets/paintings/painting24.jpg

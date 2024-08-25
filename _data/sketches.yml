@@ -1,0 +1,17 @@
+- name: Sketch 1
+  file: /assets/sketches/sketch1.jpg
+
+- name: Sketch 2
+  file: /assets/sketches/sketch2.jpg
+
+- name: Sketch 3
+  file: /assets/sketches/sketch3.jpg
+
+- name: Sketch 4
+  file: /assets/sketches/sketch4.jpg
+
+- name: Sketch 5
+  file: /assets/sketches/sketch5.jpg
+
+- name: Sketch 6
+  file: /assets/sketches/sketch6.jpg
