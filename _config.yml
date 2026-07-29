@@ -14,22 +14,36 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kinga Wierzbicka
-email: your-email@example.com
+
+# TODO: awaiting the artist's decision on which address to publish.
+# email:
+
+# TODO: replace. This text is the meta description, the og:description, the
+# JSON-LD description and the <title> suffix -- i.e. it is what Google and every
+# shared link display. The current text is Jekyll placeholder copy and describes
+# sculptures that do not exist. Awaiting the artist's approval of a replacement.
 description: >- # this means to ignore newlines until "baseurl:"
-  Immerse yourself in the captivating world of Kinga, a visionary artist whose work transcends boundaries. 
-  Our gallery showcases a diverse collection of Kinga's finest creations, from vibrant paintings to intricate sculptures. 
-  Each piece reflects Kinga's unique perspective and artistic mastery. 
+  Immerse yourself in the captivating world of Kinga, a visionary artist whose work transcends boundaries.
+  Our gallery showcases a diverse collection of Kinga's finest creations, from vibrant paintings to intricate sculptures.
+  Each piece reflects Kinga's unique perspective and artistic mastery.
   Explore the beauty, depth, and emotion of Kinga's art and be inspired by the extraordinary talent of this remarkable artist.
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://kingawierzbicka.art" # required, or jekyll-seo-tag emits a broken canonical
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap # bundled with the github-pages gem; no Gemfile change needed
+
+# Analytics -- GA4 measurement ID (G-XXXXXXXXXX). Rendered only in production, and
+# only after the visitor accepts, via _includes/google-analytics.html.
+# google_analytics: G-XXXXXXXXXX
+
+# Google Search Console verification token (jekyll-seo-tag renders the meta tag).
+# google_site_verification:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
