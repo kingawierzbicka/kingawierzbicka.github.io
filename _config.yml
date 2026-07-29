@@ -18,15 +18,18 @@ title: Kinga Wierzbicka
 # TODO: awaiting the artist's decision on which address to publish.
 # email:
 
-# TODO: replace. This text is the meta description, the og:description, the
-# JSON-LD description and the <title> suffix -- i.e. it is what Google and every
-# shared link display. The current text is Jekyll placeholder copy and describes
-# sculptures that do not exist. Awaiting the artist's approval of a replacement.
+# Kinga's own artist statement -- her approved public words (2026-07-29). Used as
+# the meta description, og:description, JSON-LD description, and the <title> suffix,
+# i.e. what Google and every shared link display.
 description: >- # this means to ignore newlines until "baseurl:"
-  Immerse yourself in the captivating world of Kinga, a visionary artist whose work transcends boundaries.
-  Our gallery showcases a diverse collection of Kinga's finest creations, from vibrant paintings to intricate sculptures.
-  Each piece reflects Kinga's unique perspective and artistic mastery.
-  Explore the beauty, depth, and emotion of Kinga's art and be inspired by the extraordinary talent of this remarkable artist.
+  My work is rooted in the timeless mediums of oil paints, oil pastels, charcoal,
+  and ink. Whether painting en plein air or working with live models in the studio,
+  I strive to capture the moment in every stroke.
+
+# Short factual descriptor. jekyll-seo-tag uses site.tagline (not site.description)
+# for the homepage <title> suffix, so the title stays concise -- "Kinga Wierzbicka |
+# Painter ..." -- while the full statement above remains the meta/og description.
+tagline: "Painter · oil, pastel, charcoal, ink"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kingawierzbicka.art" # required, or jekyll-seo-tag emits a broken canonical
