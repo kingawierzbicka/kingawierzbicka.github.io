@@ -1,10 +1,13 @@
 <header class="site-header">
-
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
+  <div class="wrap">
+    <h1 class="mark"><a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+    <hr class="rule">
+    <nav class="site-nav" aria-label="Sections">
+      {%- assign nav = "paintings,pastels,sketches" | split: "," -%}
+      {%- for slug in nav -%}
+        {%- assign href = "/" | append: slug | append: "/" -%}
+        <a href="{{ href | relative_url }}"{% if page.url == href %} aria-current="page"{% endif %}>{{ slug | capitalize }}</a>
+      {%- endfor -%}
+    </nav>
   </div>
 </header>

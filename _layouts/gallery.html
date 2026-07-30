@@ -2,44 +2,41 @@
 layout: default
 gallery_js: lightbox
 ---
-<article class="post">
+{%- assign items = site.data[page.data_file] -%}
+<div class="gallery-page">
+  <p class="eyebrow">{{ page.title | escape }}</p>
+  <h2 class="section">{{ items.size }} works</h2>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
+  <div class="rows">
+    {%- for item in items -%}
+    <figure class="shot">
+      <button type="button" class="open"
+              data-full="{{ item.file | relative_url }}"
+              data-index="{{ forloop.index0 }}"
+              data-title="{{ item.title | escape }}"
+              data-meta="{% if item.medium %}{{ item.medium | escape }}{% endif %}{% if item.dimensions %} · {{ item.dimensions | escape }}{% endif %}{% if item.year %} · {{ item.year | escape }}{% endif %}">
+        <img src="{{ item.file | relative_url }}" alt="{{ item.title | default: item.name | escape }}">
+      </button>
+      {%- if item.title or item.medium or item.year -%}
+      <figcaption class="cap">
+        {%- if item.title %}<div class="t">{{ item.title | escape }}</div>{% endif -%}
+        {%- if item.medium or item.dimensions or item.year -%}
+        <div class="m">{% if item.medium %}{{ item.medium | escape }}{% endif %}{% if item.dimensions %} · {{ item.dimensions | escape }}{% endif %}{% if item.year %} · {{ item.year | escape }}{% endif %}</div>
+        {%- endif -%}
+      </figcaption>
+      {%- endif -%}
+    </figure>
+    {%- endfor -%}
   </div>
-  {% comment %}
-  Use the data_file variable from the page front matter to access the correct data file.
-{% endcomment %}
+</div>
 
-  <div class="gallery">
-    {% assign data_file = page.data_file %}
-    {% assign items = site.data[data_file] %}
-    {% assign number_slides = items.size | minus: 1 %}
-    {% assign slides = (0..number_slides) %}
-    {% for slide in slides %} 
-    <img src="{{ site.baseurl }}{{ items[slide].file }}" onclick="openModal();currentSlide({{ slide }})" class="gallery-item"  alt="{{ items[slide].name }}">
-    {% endfor %}
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" aria-hidden="true">
+  <div class="lb-bar">
+    <span class="lb-count" aria-live="polite"></span>
+    <button type="button" class="lb-close" aria-label="Close viewer">&times;</button>
   </div>
-  
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">  
-      {% for slide in slides %}
-      <div class="mySlides">
-        <div class="numbertext">{{ slide | plus: 1 }} / {{items.size}}</div>
-        <img class="slide" src="{{ site.baseurl }}{{ items[slide].file }}" alt="{{ items[slide].name }}">
-      </div>
-      {% endfor %}  
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-    </div>
-  </div>
-
-</article>
+  <div class="lb-stage"><img class="lb-img" src="" alt=""></div>
+  <div class="lb-cap" aria-live="polite"></div>
+  <button type="button" class="lb-nav lb-prev" aria-label="Previous work">&#10094;</button>
+  <button type="button" class="lb-nav lb-next" aria-label="Next work">&#10095;</button>
+</div>

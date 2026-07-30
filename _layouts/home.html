@@ -1,32 +1,21 @@
 ---
 layout: default
 ---
-
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <div class="stmt">{{ content }}</div>
 
-  {{ content }}
-  <div class="container">
-    <div class="square">
-      <div class="text">Paintings</div>
-      <a href="/paintings/">
-        <img src="assets/paintings/painting1.jpg" alt="Paintings">
-      </a>
-    </div>
-    <div class="square">
-      <div class="text">Pastels</div>
-      <a href="/pastels/">
-        <img src="assets/pastels/pastel1.jpg" alt="Pastels">
-      </a>
-    </div>
-    <div class="square">
-      <div class="text">Sketches</div>
-      <a href="/sketches/">
-        <img src="assets/sketches/sketch1.jpg" alt="Sketches">
-      </a>
-    </div>
+  <p class="eyebrow">The work</p>
+  <div class="cats">
+    {%- assign cats = "paintings,pastels,sketches" | split: "," -%}
+    {%- for slug in cats -%}
+      {%- assign items = site.data[slug] -%}
+      {%- assign cover = items[0].file -%}
+      <figure>
+        <a href="{{ "/" | append: slug | append: "/" | relative_url }}">
+          <img src="{{ cover | relative_url }}" alt="{{ slug | capitalize }}">
+        </a>
+        <figcaption>{{ slug | capitalize }}<div class="n">{{ items.size }} works</div></figcaption>
+      </figure>
+    {%- endfor -%}
   </div>
-
 </div>

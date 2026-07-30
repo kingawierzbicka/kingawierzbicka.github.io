@@ -7,10 +7,14 @@
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div class="wrap">
         {{ content }}
       </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="wrap">© {{ site.title | escape }}</div>
+    </footer>
   </body>
 
 </html>
