@@ -43,7 +43,7 @@ plugins:
 
 # Analytics -- GA4 measurement ID (G-XXXXXXXXXX). Rendered only in production, and
 # only after the visitor accepts, via _includes/google-analytics.html.
-google_analytics: G-ZH12TLT77Q
+google_analytics: G-4KKJD948S8
 
 # Google Search Console verification token (jekyll-seo-tag renders the meta tag).
 # google_site_verification:
