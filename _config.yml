@@ -18,13 +18,13 @@ title: Kinga Wierzbicka
 # TODO: awaiting the artist's decision on which address to publish.
 # email:
 
-# Kinga's own artist statement -- her approved public words (2026-07-29). Used as
-# the meta description, og:description, JSON-LD description, and the <title> suffix,
-# i.e. what Google and every shared link display.
+# Meta description -- derived from Kinga's confirmed bio (her own words; see
+# docs/bio.md in the private repo). Used as the meta description, og:description,
+# and JSON-LD description, i.e. what Google and every shared link display.
 description: >- # this means to ignore newlines until "baseurl:"
-  My work is rooted in the timeless mediums of oil paints, oil pastels, charcoal,
-  and ink. Whether painting en plein air or working with live models in the studio,
-  I strive to capture the moment in every stroke.
+  I draw and paint almost anything, especially things that might easily go
+  unnoticed. For me, making art is a way of looking, a continuous process of
+  discovering.
 
 # Short factual descriptor. jekyll-seo-tag uses site.tagline (not site.description)
 # for the homepage <title> suffix, so the title stays concise -- "Kinga Wierzbicka |
