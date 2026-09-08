@@ -1,7 +1,40 @@
 /* Kinga Wierzbicka — Quiet Gallery. Implements the approved --kw-* tokens
-   (source of truth: kinga-art/brand-canvas/styles.css). Fonts loaded in head.html.
-   Rules: never crop a painting (uniform height, ragged right, no object-fit);
-   no colour near an image; accent for links and small marks only. */
+   (source of truth: kinga-art/brand-canvas/styles.css). Fonts self-hosted
+   below from assets/fonts/ (woff2, SIL OFL 1.1 licences alongside) — no
+   third-party font request. Rules: never crop a painting (uniform height, ragged right,
+   no object-fit); no colour near an image; accent for links and small marks only. */
+
+/* ── self-hosted fonts (woff2, latin + latin-ext subsets) ─────
+   Only the weights actually used: Playfair Display 400 + 400 italic,
+   Work Sans 300 + 500. font-display: swap avoids invisible text. */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/playfair-display-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/playfair-display-400-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('fonts/work-sans-300.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/work-sans-500.woff2') format('woff2');
+}
 
 :root {
   --kw-paper:   #F7F5F0;
