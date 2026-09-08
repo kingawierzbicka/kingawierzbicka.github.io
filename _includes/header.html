@@ -8,6 +8,7 @@
         {%- assign href = "/" | append: slug | append: "/" -%}
         <a href="{{ href | relative_url }}"{% if page.url == href %} aria-current="page"{% endif %}>{{ slug | capitalize }}</a>
       {%- endfor -%}
+      <a href="{{ "/about/" | relative_url }}"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
     </nav>
   </div>
 </header>
