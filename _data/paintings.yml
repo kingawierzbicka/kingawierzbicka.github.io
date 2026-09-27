@@ -1,71 +1,131 @@
-- name: Painting 1
-  file: /assets/paintings/painting1.jpg
+- title: "A Crowd of Three"
+  file: /assets/paintings/a-crowd-of-three.jpg
+  medium: "Oil on canvas panel"
+  dimensions: "70 × 50 cm"
+  alt: "Oil painting of three whole fish on a blue plate with lemon wedges, a fork and knife on a red-striped cloth"
 
-- name: Painting 2
-  file: /assets/paintings/painting2.jpg
+- title: "A Cup of Lemons"
+  file: /assets/paintings/a-cup-of-lemons.jpg
+  medium: "Oil on paper"
+  dimensions: "33 × 21 cm"
+  alt: "Oil painting of lemons in and beside a white cup on a grey tabletop"
 
-- name: Painting 3
-  file: /assets/paintings/painting3.jpg
+- title: "All The White Cups"
+  file: /assets/paintings/all-the-white-cups.jpg
+  medium: "Oil on paper"
+  dimensions: "40 × 30 cm"
+  alt: "Oil painting of three pale vessels, a low bowl, a tall cup and a rounded pot, on a grey surface"
 
-- name: Painting 4
-  file: /assets/paintings/painting4.jpg
+- title: "Beauty In Green"
+  file: /assets/paintings/beauty-in-green.jpg
+  medium: "Acrylic on board"
+  dimensions: "40 × 50 cm"
+  alt: "Acrylic painting of a pale cow standing in a vivid green meadow, facing the viewer"
 
-- name: Painting 5
-  file: /assets/paintings/painting5.jpg
+- title: "Blue Door"
+  file: /assets/paintings/blue-door.jpg
+  medium: "Oil on paper"
+  dimensions: "30 × 40 cm"
+  alt: "Oil painting of an open bright-blue door in a weathered grey house facade"
 
-- name: Painting 6
-  file: /assets/paintings/painting6.jpg
+- title: "Clouds over Mountains"
+  file: /assets/paintings/clouds-over-mountains.jpg
+  medium: "Oil on paper"
+  dimensions: "40 × 30 cm"
+  alt: "Oil painting of white clouds drifting over dark blue mountains above a green field"
 
-- name: Painting 7
-  file: /assets/paintings/painting7.jpg
+- title: "Coffee Pot"
+  file: /assets/paintings/coffee-pot.jpg
+  medium: "Oil on paper"
+  dimensions: "26 × 36 cm"
+  alt: "Oil painting of a stovetop moka pot with three lemons on a grey table"
 
-- name: Painting 8
-  file: /assets/paintings/painting8.jpg
+- title: "Dark Bottle on Quilt"
+  file: /assets/paintings/dark-bottle-on-quilt.jpg
+  medium: "Oil on paper"
+  dimensions: "26 × 36 cm"
+  alt: "Oil painting of a dark bottle, a metal jug and an orange on a colourful chequered quilt"
 
-- name: Painting 9
-  file: /assets/paintings/painting9.jpg
+- title: "Freesias in Glass Jar"
+  file: /assets/paintings/freesias-in-glass-jar.jpg
+  medium: "Acrylic on canvas panel"
+  dimensions: "50 × 70 cm"
+  alt: "Acrylic painting of orange freesias in a glass jar casting blue shadows on a windowsill"
 
-- name: Painting 10
-  file: /assets/paintings/painting10.jpg
+- title: "In the Sheets"
+  file: /assets/paintings/in-the-sheets.jpg
+  medium: "Oil on cardboard"
+  dimensions: "33 × 31 cm"
+  alt: "Oil painting of a sleeping nude woman curled up on pale blue bedsheets"
 
-- name: Painting 11
-  file: /assets/paintings/painting11.jpg
+- title: "Limes on a Countertop"
+  file: /assets/paintings/limes-on-a-countertop.jpg
+  medium: "Oil on paper"
+  dimensions: "70 × 50 cm"
+  alt: "Oil painting of five limes in a row on a countertop against a mauve-pink background"
 
-- name: Painting 12
-  file: /assets/paintings/painting12.jpg
+- title: "Not Smiling"
+  file: /assets/paintings/not-smiling.jpg
+  medium: "Oil on paper"
+  dimensions: "26 × 36 cm"
+  alt: "Oil portrait of a woman with a blonde bob and yellow scarf looking upward, against an ochre background"
 
-- name: Painting 13
-  file: /assets/paintings/painting13.jpg
+- title: "On the Way to Únětice"
+  file: /assets/paintings/on-the-way-to-unetice.jpg
+  medium: "Oil on paper"
+  dimensions: "36 × 26 cm"
+  alt: "Oil painting of a white cottage with a red roof and red door beside a sandy path in greenery"
 
-- name: Painting 14
-  file: /assets/paintings/painting14.jpg
+- title: "Path Through the Swamp"
+  file: /assets/paintings/path-through-the-swamp.jpg
+  medium: "Oil on canvas panel"
+  dimensions: "24 × 30 cm"
+  alt: "Oil painting of a wooden boardwalk leading through a marsh toward birch trees in fresh green light"
 
-- name: Painting 15
-  file: /assets/paintings/painting15.jpg
+- title: "Peonies and Pears"
+  file: /assets/paintings/peonies-and-pears.jpg
+  medium: "Oil on canvas panel"
+  dimensions: "50 × 70 cm"
+  alt: "Oil painting of white peonies in a blue glass vase beside a basket of pears on a wooden table"
 
-- name: Painting 16
-  file: /assets/paintings/painting16.jpg
+- title: "Portrait of a Bald Man"
+  file: /assets/paintings/portrait-of-a-bald-man.jpg
+  medium: "Oil on paper"
+  dimensions: "21 × 28 cm"
+  alt: "Oil portrait of a bald, grey-bearded man facing the viewer against a grey background"
 
-- name: Painting 17
-  file: /assets/paintings/painting17.jpg
+- title: "Remains in Pragovka"
+  file: /assets/paintings/remains-in-pragovka.jpg
+  medium: "Oil on paper"
+  dimensions: "40 × 30 cm"
+  alt: "Loose oil study of a derelict single-storey building with boarded windows behind a grassy rise"
 
-- name: Painting 18
-  file: /assets/paintings/painting18.jpg
+- title: "River in the Meadow"
+  file: /assets/paintings/river-in-the-meadow.jpg
+  medium: "Oil on board"
+  dimensions: "36 × 26 cm"
+  alt: "Oil painting of a river curving through lush green meadow banks"
 
-- name: Painting 19
-  file: /assets/paintings/painting19.jpg
+- title: "Roses and a Cup"
+  file: /assets/paintings/roses-and-a-cup.jpg
+  medium: "Acrylic on canvas panel"
+  dimensions: "50 × 70 cm"
+  alt: "Acrylic painting of dark red roses in a glass vase beside a small cup on a magenta tabletop"
 
-- name: Painting 20
-  file: /assets/paintings/painting20.jpg
+- title: "Skulls'n Bones"
+  file: /assets/paintings/skulls-n-bones.jpg
+  medium: "Oil on canvas panel"
+  dimensions: "40 × 30 cm"
+  alt: "Oil painting of a pile of human skulls and bones against a black background"
 
-- name: Painting 21
-  file: /assets/paintings/painting21.jpg
+- title: "Small and Abandoned"
+  file: /assets/paintings/small-and-abandoned.jpg
+  medium: "Oil on paper"
+  dimensions: "40 × 30 cm"
+  alt: "Oil painting of a small abandoned house with a rust-red roof in a hazy landscape"
 
-- name: Painting 22
-  file: /assets/paintings/painting22.jpg
-
-- name: Painting 23
-  file: /assets/paintings/painting23.jpg
-
-- name: Painting 24
-  file: /assets/paintings/painting24.jpg
+- title: "Fading To Blue"
+  file: /assets/paintings/fading-to-blue.jpg
+  medium: "Acrylic on board"
+  dimensions: "40 × 50 cm"
+  alt: "Acrylic painting of wilting roses in a purple vase on a blue-and-white chequered cloth"

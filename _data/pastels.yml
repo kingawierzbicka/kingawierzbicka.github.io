@@ -1,20 +1,47 @@
-- name: Pastel 1
-  file: /assets/pastels/pastel1.jpg
+- title: "Brown Rooster"
+  file: /assets/pastels/brown-rooster.jpg
+  medium: "Oil pastel on paper"
+  dimensions: "30 × 42 cm"
+  alt: "Oil pastel of a brown rooster with a bright red comb, beak open, against a teal background"
 
-- name: Pastel 2
-  file: /assets/pastels/pastel2.jpg
+- title: "In Full Run"
+  file: /assets/pastels/in-full-run.jpg
+  medium: "Oil pastel on paper"
+  dimensions: "30 × 42 cm"
+  alt: "Oil pastel of two white horses running side by side against a dark background"
 
-- name: Pastel 3
-  file: /assets/pastels/pastel3.jpg
+- title: "My Cat on Yellow Armchair"
+  file: /assets/pastels/my-cat-on-yellow-armchair.jpg
+  medium: "Oil pastel on paper"
+  dimensions: "30 × 42 cm"
+  alt: "Oil pastel of a grey tabby cat lying on a yellow armchair"
 
-- name: Pastel 4
-  file: /assets/pastels/pastel4.jpg
+- title: "Sculpture Head"
+  file: /assets/pastels/sculpture-head.jpg
+  medium: "Oil pastel on paper"
+  dimensions: "30 × 42 cm"
+  alt: "Oil pastel study of a classical sculpture head in profile, in violet and yellow tones"
 
-- name: Pastel 5
-  file: /assets/pastels/pastel5.jpg
+- title: "Skull on Blue"
+  file: /assets/pastels/skull-on-blue.jpg
+  medium: "Oil pastel on paper"
+  dimensions: "30 × 42 cm"
+  alt: "Oil pastel of a human skull on a textured blue and red background"
 
-- name: Pastel 6
-  file: /assets/pastels/pastel6.jpg
+- title: "Skull on Pink"
+  file: /assets/pastels/skull-on-pink.jpg
+  medium: "Oil pastel on paper"
+  dimensions: "30 × 42 cm"
+  alt: "Oil pastel of a human skull against vertical streaks of pink and purple"
 
-- name: Pastel 7
-  file: /assets/pastels/pastel7.jpg
+- title: "Three Fish"
+  file: /assets/pastels/three-fish.jpg
+  medium: "Oil pastel on paper"
+  dimensions: "30 × 42 cm"
+  alt: "Oil pastel of three fish in yellow, orange and pink arranged on a deep blue background"
+
+- title: "White Rooster"
+  file: /assets/pastels/white-rooster.jpg
+  medium: "Oil pastel on paper"
+  dimensions: "30 × 42 cm"
+  alt: "Oil pastel of a white rooster with a dark red comb against a warm yellow background"

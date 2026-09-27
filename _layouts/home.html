@@ -6,13 +6,13 @@ layout: default
 
   <p class="eyebrow">The work</p>
   <div class="cats">
-    {%- assign cats = "paintings,pastels,sketches" | split: "," -%}
+    {%- assign cats = "paintings,pastels,drawings" | split: "," -%}
     {%- for slug in cats -%}
       {%- assign items = site.data[slug] -%}
       {%- assign cover = items[0].file -%}
       <figure>
         <a href="{{ "/" | append: slug | append: "/" | relative_url }}">
-          <img src="{{ cover | relative_url }}" alt="{{ slug | capitalize }}">
+          <img src="{{ cover | relative_url }}" alt="{{ items[0].alt | default: items[0].title | default: slug | escape }}">
         </a>
         <figcaption>{{ slug | capitalize }}<div class="n">{{ items.size }} works</div></figcaption>
       </figure>

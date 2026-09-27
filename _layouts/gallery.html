@@ -22,7 +22,7 @@ gallery_js: lightbox
              sizes="(max-width: 720px) 100vw, 400px"
              width="{{ d.w }}" height="{{ d.h }}"{% endif %}
              loading="lazy" decoding="async"
-             alt="{{ item.title | default: item.name | escape }}">
+             alt="{{ item.alt | default: item.title | default: item.name | escape }}">
       </button>
       {%- if item.title or item.medium or item.year -%}
       <figcaption class="cap">
