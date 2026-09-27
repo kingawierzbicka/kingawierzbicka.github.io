@@ -185,7 +185,6 @@ h2.section {
 .carousel { position: relative; margin: 26px 0 0; }
 .car-track {
   display: flex;
-  gap: 34px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
@@ -194,12 +193,18 @@ h2.section {
 }
 .car-track::-webkit-scrollbar { display: none; }
 .car-track.dragging { scroll-snap-type: none; cursor: grabbing; }
-.car-track > .card { list-style: none; flex: 0 0 auto; scroll-snap-align: start; }
+.car-track > .card {
+  list-style: none;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+}
 .card a { color: inherit; display: block; }
 .card img {
-  height: 260px;
+  height: 380px;
   width: auto;
-  max-width: none;
+  max-width: 100%;
   border: 1px solid var(--kw-line);
   background: var(--kw-surface);
   user-select: none;
@@ -223,7 +228,7 @@ h2.section {
 }
 .car-btn {
   position: absolute;
-  top: 130px;
+  top: 190px;
   transform: translateY(-50%);
   z-index: 2;
   background: none; border: 0; cursor: pointer;
@@ -324,8 +329,8 @@ figcaption.cap .m { color: var(--kw-soft); font-size: 11.5px; letter-spacing: .0
   .eyebrow { margin-top: 44px; }
   .bio .eyebrow { margin-top: 34px; }
 
-  .card img { height: 200px; }
-  .car-btn { top: 100px; font-size: 20px; }
+  .card img { height: 230px; }
+  .car-btn { top: 115px; font-size: 20px; }
   .car-prev { left: -8px; }
   .car-next { right: -8px; }
 

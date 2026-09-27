@@ -38,20 +38,50 @@
     });
   }
 
-  /* ── carousels (shared by Blog and Gallery sections) ────── */
+  /* ── carousels (shared by Blog and Gallery sections) ──────
+     One card visible at a time. Manual: arrows, mouse drag,
+     touch/trackpad swipe. Automatic: advances every 30 s and
+     wraps to the first card; any manual use resets the timer,
+     hovering pauses it, and it is off entirely for users who
+     prefer reduced motion. */
+  var AUTOPLAY_MS = 30000;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   document.querySelectorAll('[data-carousel]').forEach(function (car) {
     var track = car.querySelector('.car-track');
     var prev = car.querySelector('.car-prev');
     var next = car.querySelector('.car-next');
     if (!track) return;
 
-    var step = function () {
-      var card = track.querySelector('.card');
-      var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 0;
-      return card ? card.getBoundingClientRect().width + gap : track.clientWidth * 0.8;
+    var step = function () { return track.clientWidth; };
+    var atEnd = function () { return track.scrollLeft + track.clientWidth >= track.scrollWidth - 4; };
+    var goNext = function () {
+      if (atEnd()) track.scrollTo({ left: 0, behavior: 'smooth' });
+      else track.scrollBy({ left: step(), behavior: 'smooth' });
     };
-    if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
-    if (next) next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+
+    /* autoplay: reset on any manual interaction, pause on hover */
+    var timer = null;
+    var hovering = false;
+    var stop = function () { if (timer) { clearInterval(timer); timer = null; } };
+    var start = function () {
+      stop();
+      if (reduceMotion) return;
+      timer = setInterval(function () {
+        if (!hovering && !document.hidden) goNext();
+      }, AUTOPLAY_MS);
+    };
+    car.addEventListener('mouseenter', function () { hovering = true; });
+    car.addEventListener('mouseleave', function () { hovering = false; });
+
+    if (prev) prev.addEventListener('click', function () {
+      track.scrollBy({ left: -step(), behavior: 'smooth' });
+      start();
+    });
+    if (next) next.addEventListener('click', function () {
+      goNext();
+      start();
+    });
 
     /* mouse drag to scroll; suppress the click that ends a drag */
     var down = false, startX = 0, startLeft = 0, moved = 0;
@@ -61,6 +91,7 @@
       startX = e.clientX;
       startLeft = track.scrollLeft;
       track.classList.add('dragging');
+      start();
     });
     window.addEventListener('pointermove', function (e) {
       if (!down) return;
@@ -80,5 +111,11 @@
         moved = 0;
       }
     }, true);
+
+    /* touch / trackpad swipe also counts as manual use */
+    track.addEventListener('touchstart', function () { start(); }, { passive: true });
+    track.addEventListener('wheel', function () { start(); }, { passive: true });
+
+    start();
   });
 })();
